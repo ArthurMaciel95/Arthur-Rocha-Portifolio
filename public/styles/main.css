@@ -1,0 +1,367 @@
+aside {
+  background-color: black;
+  position: fixed;
+  height: 100Vh;
+  width: 25vw;
+  padding: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+aside.active {
+  left: -25vw;
+  -webkit-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+aside .close-button {
+  background-color: black;
+  position: absolute;
+  right: -40px;
+  top: 10px;
+  cursor: pointer;
+}
+
+aside .close-button .hamburger {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 40px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+aside .close-button .hamburger .line {
+  height: 2px;
+  width: 25px;
+  background-color: #e9e9e9;
+}
+
+aside .logo {
+  margin-bottom: 3rem;
+  font-family: "Abril Fatface", cursive, sans-serif;
+  line-height: 1.5;
+}
+
+aside .logo a {
+  background-image: url("../image/bg_1.jpg");
+  background-size: contain;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #e9e9e9;
+  font-family: "Abril Fatface", cursive, sans-serif;
+  text-decoration: none;
+  font-size: 2.2rem;
+}
+
+aside .logo .font-secondary {
+  color: #95d818;
+  font-size: 1rem;
+  font-family: 'Poppins','Arial';
+  font-weight: 700;
+}
+
+aside li {
+  list-style: none;
+  padding-top: 10px;
+}
+
+aside li .text-menu {
+  height: 100%;
+  padding: 5px 0px;
+  position: relative;
+  text-decoration: none;
+  color: #e9e9e9;
+  font-family: 'Poppins',sans-serif;
+  font-size: 0.8rem;
+  width: 100%;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+aside li .text-menu::before {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  content: '';
+  height: 2px;
+  width: 0%;
+  background-color: #95d818;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+aside li .text-menu:hover::before {
+  left: 0%;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+aside li .text-menu:hover {
+  color: #95d818;
+}
+
+aside .footer-nav {
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+aside .footer-nav h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #e9e9e9;
+  font-size: 0.9rem;
+}
+
+aside .footer-nav input {
+  font-family: 'Poppins';
+  padding: 15px 10px;
+  background-color: #0f0f0f;
+  border: none;
+  color: #575757;
+  width: 100%;
+}
+
+aside .footer-nav p {
+  color: dimgray;
+  font-family: 'Poppins';
+  font-size: 0.7rem;
+  margin-left: 10px;
+}
+
+.content-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 25vw;
+  -webkit-transition: margin-left 0.5s ease;
+  transition: margin-left 0.5s ease;
+}
+
+.content-area.active {
+  margin-left: 0;
+  -webkit-transition: margin-left 0.5s ease;
+  transition: margin-left 0.5s ease;
+}
+
+.content-area img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+  width: 50%;
+}
+
+.content-area img::before {
+  content: '2222';
+  width: 10rem;
+  height: 10rem;
+  background-color: #95d818;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 222;
+}
+
+.content-area .image-description {
+  height: 100vh;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-area .image-description .description-box {
+  opacity: 0;
+  -webkit-transform: translate3d(-30px, 0, 0);
+          transform: translate3d(-30px, 0, 0);
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.content-area .image-description.active .description-box {
+  opacity: 1;
+  -webkit-transform: translate3d(0px, 0, 0);
+          transform: translate3d(0px, 0, 0);
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  transition: opacity 1s ease, -webkit-transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease;
+}
+
+.content-area .image-description .description-box {
+  color: #868686;
+  width: auto;
+  max-width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.content-area .image-description .description-box h5 {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: calc(0.4rem + 0.4vw);
+}
+
+.content-area .image-description .description-box h1 {
+  font-size: calc(1.5rem + 1vw);
+  color: #e9e9e9;
+  font-family: "Abril Fatface", cursive, sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.content-area .image-description .description-box article p {
+  font-size: calc(0.6rem + 0.3vw);
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2rem;
+  margin-left: 20px;
+}
+
+.content-area .image-description .description-box article p::after {
+  content: "";
+  height: 4rem;
+  width: 2px;
+  background-color: #95d818;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+
+.content-area .image-description .description-box a {
+  font-size: calc(0.6rem + 0.3vw);
+  font-family: "Poppins";
+  text-decoration: none;
+  color: #95d818;
+  font-size: 0.8rem;
+  -webkit-transition: letter-spacing 0.3s ease;
+  transition: letter-spacing 0.3s ease;
+}
+
+.content-area .image-description .description-box a:hover {
+  letter-spacing: 2px;
+  -webkit-transition: letter-spacing 0.3s ease;
+  transition: letter-spacing 0.3s ease;
+}
+
+@media (max-width: 1000px) {
+  aside {
+    display: none;
+  }
+  .content-area {
+    margin-left: 0;
+  }
+  .content-area img {
+    width: 50%;
+  }
+  .image-description {
+    width: 50%;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    width: 100vw;
+  }
+  .content-area {
+    position: relative;
+  }
+  .content-area img {
+    -webkit-filter: grayscale(1) blur(1px);
+            filter: grayscale(1) blur(1px);
+    width: 100vw;
+  }
+  .content-area .image-description {
+    position: absolute;
+    width: 100vw;
+  }
+  .content-area .image-description .description-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 3rem;
+    z-index: 200;
+    font-size: calc(10px, 1vw);
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    width: 100vw;
+  }
+  .content-area {
+    position: relative;
+  }
+  .content-area img {
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+    width: 100vw;
+  }
+  .content-area .image-description {
+    position: absolute;
+  }
+  .content-area .image-description .description-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    z-index: 200;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  background-color: #0a0a0a;
+  line-height: 1.8;
+}
+/*# sourceMappingURL=main.css.map */
