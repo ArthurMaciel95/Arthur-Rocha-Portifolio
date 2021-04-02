@@ -1,0 +1,19 @@
+@media (max-width: 1000px) {
+  aside {
+    display: none;
+  }
+  .content-area {
+    margin-left: 0;
+
+    img{
+      width: 50%;
+    }
+  }
+  
+  .description-box{
+    width: 100%;
+  }
+  .image-description {
+    width: 50%;
+  }
+}
