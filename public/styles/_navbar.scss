@@ -1,138 +1,4 @@
-<<<<<<< HEAD
 
-
-
-aside{
-    background-color: rgb(0, 0, 0);
-    position: fixed;
-    height: 100Vh;
-    width: 25vw;
-    padding: 1.8rem;
-    display: flex;
-    left: 0;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: left 0.5s ease;
-
-    &.active{
-        left: -25vw;
-        transition: left 0.5s ease;
-    }
-
-    .close-button{
-        background-color: black;
-        position: absolute;
-        right: -40px;
-        top: 10px;
-        cursor: pointer;
-        .hamburger{
-            margin: 10px;
-            display: flex;
-            flex-direction: column;
-            height: 40px;
-            justify-content: space-evenly;
-            .line{
-                height: 2px;
-                width: 25px;
-                background-color: $font-white-color
-            }
-
-            &.close{
-
-            }
-        }
-    }
-    .logo{
-        margin-bottom: 3rem;
-        font-family: $font-family-Abril;
-        line-height: 1.5;
-        a{
-            background-image: url('../image/bg_1.jpg');
-            background-size: contain;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: $font-white-color;
-            font-family: $font-family-Abril;
-            text-decoration: none;
-            font-size: 2.2rem;
-            
-           
-            
-        }
-        .font-secondary{
-            color: $primary-color;
-            font-size: 1rem;
-            font-family: 'Poppins','Arial';
-            font-weight: 700;
-        }
-    }
-    li{
-        list-style: none;
-        padding-top: 10px;
-        .text-menu{
-            height: 100%;  
-            padding: 5px 0px;  
-            position: relative;
-            text-decoration: none;
-            color: $font-white-color;
-            font-family: 'Poppins',sans-serif;
-            font-size: 0.8rem;
-            width: 100%;
-            transition: color 0.3s ease;
-            letter-spacing: 2px;
-            font-weight: 300;
-
-            &::before{
-                position: absolute;
-                bottom: 0px;
-                left: 50%;
-                content: '';
-                height: 2px;
-                width: 0%;
-                background-color: $primary-color;
-                transition: all 0.3s ease;
-
-               
-            }
-            &:hover::before{
-                
-                    left: 0%;
-                    width: 100%;
-                    transition: all 0.3s ease;
-            }
-            &:hover{
-                color: $primary-color;
-               
-            }
-        }
-    }
-
-    .footer-nav{
-        height: 30vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        h4{
-            font-family: 'Poppins', sans-serif;
-            color: $font-white-color;
-            font-size: 0.9rem;
-        }
-        input{
-            font-family: 'Poppins';
-            padding: 15px 10px;
-            background-color: rgb(15, 15, 15);
-            border: none;
-            color: rgb(87, 87, 87);
-            width: 100%;
-        }
-        p{
-            color: rgb(105, 105, 105);
-            font-family: 'Poppins';
-            font-size: 0.7rem;
-                margin-left: 10px;
-        }
-    }
-=======
 
 
 
@@ -266,5 +132,139 @@ aside{
                 margin-left: 10px;
         }
     }
->>>>>>> 91b7712959c5a499ce2b644b9da83a055038a85f
+
+
+
+
+aside{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    height: 100Vh;
+    width: 25vw;
+    padding: 1.8rem;
+    display: flex;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: left 0.5s ease;
+
+    &.active{
+        left: -25vw;
+        transition: left 0.5s ease;
+    }
+
+    .close-button{
+        background-color: black;
+        position: absolute;
+        right: -40px;
+        top: 10px;
+        cursor: pointer;
+        .hamburger{
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 40px;
+            justify-content: space-evenly;
+            .line{
+                height: 2px;
+                width: 25px;
+                background-color: $font-white-color
+            }
+
+            &.close{
+
+            }
+        }
+    }
+    .logo{
+        margin-bottom: 3rem;
+        font-family: $font-family-Abril;
+        line-height: 1.5;
+        a{
+            background-image: url('../image/bg_1.jpg');
+            background-size: contain;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: $font-white-color;
+            font-family: $font-family-Abril;
+            text-decoration: none;
+            font-size: 2.2rem;
+            
+           
+            
+        }
+        .font-secondary{
+            color: $primary-color;
+            font-size: 1rem;
+            font-family: 'Poppins','Arial';
+            font-weight: 700;
+        }
+    }
+    li{
+        list-style: none;
+        padding-top: 10px;
+        .text-menu{
+            height: 100%;  
+            padding: 5px 0px;  
+            position: relative;
+            text-decoration: none;
+            color: $font-white-color;
+            font-family: 'Poppins',sans-serif;
+            font-size: 0.8rem;
+            width: 100%;
+            transition: color 0.3s ease;
+            letter-spacing: 2px;
+            font-weight: 300;
+
+            &::before{
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                content: '';
+                height: 2px;
+                width: 0%;
+                background-color: $primary-color;
+                transition: all 0.3s ease;
+
+               
+            }
+            &:hover::before{
+                
+                    left: 0%;
+                    width: 100%;
+                    transition: all 0.3s ease;
+            }
+            &:hover{
+                color: $primary-color;
+               
+            }
+        }
+    }
+
+    .footer-nav{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        h4{
+            font-family: 'Poppins', sans-serif;
+            color: $font-white-color;
+            font-size: 0.9rem;
+        }
+        input{
+            font-family: 'Poppins';
+            padding: 15px 10px;
+            background-color: rgb(15, 15, 15);
+            border: none;
+            color: rgb(87, 87, 87);
+            width: 100%;
+        }
+        p{
+            color: rgb(105, 105, 105);
+            font-family: 'Poppins';
+            font-size: 0.7rem;
+                margin-left: 10px;
+        }
+    }
+
 }
