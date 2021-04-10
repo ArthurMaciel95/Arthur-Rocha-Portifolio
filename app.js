@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const closeButton = document.querySelector(".close-button");
 const aside = document.querySelector("aside");
 const contentArea = document.querySelectorAll(".content-area");
@@ -33,7 +33,7 @@ function animaScroll() {
 }
 
 window.addEventListener("scroll", animaScroll);
-=======
+
 const closeButton = document.querySelector(".close-button");
 const aside = document.querySelector("aside");
 const contentArea = document.querySelectorAll(".content-area");
@@ -68,4 +68,4 @@ function animaScroll() {
 }
 
 window.addEventListener("scroll", animaScroll);
->>>>>>> 91b7712959c5a499ce2b644b9da83a055038a85f
+
