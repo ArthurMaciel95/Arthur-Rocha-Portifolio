@@ -167,7 +167,7 @@ aside .footer-nav p {
 }
 
 .content-area.active {
-  margin-left: 0;
+  margin-left: 0px;
   -webkit-transition: margin-left 0.5s ease;
   transition: margin-left 0.5s ease;
 }
@@ -179,10 +179,8 @@ aside .footer-nav p {
   width: 50%;
 }
 
-
-
 .content-area img::before {
-  content: '2222';
+  content: '';
   width: 10rem;
   height: 10rem;
   background-color: #95d818;
@@ -191,7 +189,6 @@ aside .footer-nav p {
   left: 50%;
   z-index: 222;
 }
-
 
 .content-area .image-description {
   height: 100vh;
@@ -208,7 +205,7 @@ aside .footer-nav p {
 }
 
 .content-area .image-description .description-box {
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translate3d(-30px, 0, 0);
           transform: translate3d(-30px, 0, 0);
   -webkit-transition: opacity 1s ease;
@@ -245,19 +242,11 @@ aside .footer-nav p {
 .content-area .image-description .description-box h5 {
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.2rem;
-
-  font-size: 0.7rem;
-}
-
-.content-area .image-description .description-box h1 {
-  font-size: 2.5rem;
-
   font-size: calc(0.4rem + 0.4vw);
 }
 
 .content-area .image-description .description-box h1 {
   font-size: calc(1.5rem + 1vw);
-
   color: #e9e9e9;
   font-family: "Abril Fatface", cursive, sans-serif;
   font-weight: 400;
@@ -265,13 +254,8 @@ aside .footer-nav p {
 }
 
 .content-area .image-description .description-box article p {
-
-  position: relative;
-  font-size: 0.9rem;
-
   font-size: calc(0.6rem + 0.3vw);
   position: relative;
-
   font-family: "Poppins", sans-serif;
   line-height: 1.2rem;
   margin-left: 20px;
@@ -280,11 +264,7 @@ aside .footer-nav p {
 .content-area .image-description .description-box article p::after {
   content: "";
   height: 4rem;
-
-  width: 1px;
-
   width: 2px;
-
   background-color: #95d818;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,10 +275,7 @@ aside .footer-nav p {
 }
 
 .content-area .image-description .description-box a {
-
-
   font-size: calc(0.6rem + 0.3vw);
-
   font-family: "Poppins";
   text-decoration: none;
   color: #95d818;
@@ -323,18 +300,28 @@ aside .footer-nav p {
   .content-area img {
     width: 50%;
   }
-
   .description-box {
     width: 100%;
   }
-
-
   .image-description {
     width: 50%;
   }
 }
 
-
+@media (max-width: 1000px) {
+  aside {
+    display: none;
+  }
+  .content-area {
+    margin-left: 0;
+  }
+  .content-area img {
+    width: 50%;
+  }
+  .image-description {
+    width: 50%;
+  }
+}
 
 @media (max-width: 750px) {
   .container {
@@ -381,7 +368,6 @@ aside .footer-nav p {
     z-index: 200;
   }
 }
-
 
 * {
   margin: 0;
